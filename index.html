@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samual Garomsa | Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background: #0f172a;
+      color: #e2e8f0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0f172a, #1e293b, #2563eb);
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      background: #cbd5e1;
+      margin-bottom: 20px;
+    }
+
+    .section-card {
+      background: #1e293b;
+      border-radius: 14px;
+      padding: 28px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      color: #93c5fd;
+      border-bottom: 2px solid #334155;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+    }
+
+    .project-card {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 20px;
+      height: 100%;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(37, 99, 235, 0.25);
+    }
+
+    .project-card h3 {
+      color: white;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      color: #cbd5e1;
+    }
+
+    .contact a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #111827;
+      color: #cbd5e1;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Hero Section -->
+  <header class="hero">
+    <img src="profile.jpg" alt="Samual Garomsa" class="profile-img">
+    <h1 class="display-4 fw-bold text-white">Samual Garomsa</h1>
+    <p class="lead mx-auto" style="max-width: 750px;">
+      Computer Science student at the University of Louisville with experience in software development, machine learning, artificial intelligence, and data-driven applications.
+    </p>
+  </header>
+
+  <!-- Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Samual</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container my-5">
+
+    <!-- About Section -->
+    <section id="about" class="section-card">
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science student seeking opportunities in Software Engineering, Machine Learning, or Data Science. I enjoy building software, working with data, and solving real-world problems using technology.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-card">
+      <h2>Technical Skills</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-transparent text-light"><strong>Programming:</strong> Python, Java, C, C++, C#, SQL</li>
+        <li class="list-group-item bg-transparent text-light"><strong>AI / Data Science:</strong> Machine Learning, Deep Learning, Generative AI, Neural Networks</li>
+        <li class="list-group-item bg-transparent text-light"><strong>Libraries:</strong> PyTorch, TensorFlow, Scikit-learn, Pandas, NumPy</li>
+        <li class="list-group-item bg-transparent text-light"><strong>Tools:</strong> Git, GitHub, MySQL, Neo4j, Jupyter Notebook, VS Code</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-card">
+      <h2>Projects</h2>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="project-card">
+            <h3>Machine Learning Models</h3>
+            <p>Implemented K-Nearest Neighbors and Logistic Regression models and evaluated performance using cross-validation.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="project-card">
+            <h3>Deep Learning Project</h3>
+            <p>Built neural network and CNN models for image classification and improved performance using dropout and regularization.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="project-card">
+            <h3>Generative AI / LLM Project</h3>
+            <p>Fine-tuned large language models using QLoRA and compared baseline and fine-tuned performance.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="project-card">
+            <h3>3D Tic-Tac-Toe Game</h3>
+            <p>Developed game logic, user input handling, and configurable difficulty settings in C/C++.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section-card">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>University of Louisville</strong> — Bachelor of Arts in Computer Science, Expected May 2026, GPA: 3.66</li>
+        <li><strong>Jefferson Community & Technical College</strong> — Associate of Science, 2020, GPA: 3.8</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-card contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:samualgaromsa@gmail.com">samualgaromsa@gmail.com</a></p>
+      <p>Phone: <a href="tel:+15022358521">(502) 235-8521</a></p>
+      <p>GitHub: <a href="https://github.com/saminati8" target="_blank">github.com/saminati8</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/samual-garomsa-247248313" target="_blank">linkedin.com/in/samual-garomsa-247248313</a></p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p class="mb-0">© 2026 Samual Garomsa | Portfolio Website</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
